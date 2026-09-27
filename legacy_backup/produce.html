@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind - Produce Guide</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="images/freshfindlogo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/visitor.css">
+    <link rel="stylesheet" href="css/pagepath.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/produce.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+</head>
+
+<body>
+
+    <!-- Live Time & Visitor Counter -->
+    <div class="top-bar">
+        <div class="top-container">
+
+            <div class="live-time">
+                <i class="fa-solid fa-clock"></i>
+                Live Time:
+                <span id="clock">--:--:--</span>
+            </div>
+
+            <div class="visitors">
+                <i class="fa-solid fa-eye"></i>
+                Visitors:
+                <strong id="visitor-counter">0</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+<header class="navbar">
+
+    <div class="logo">
+        <img src="images/freshfindlogo.jpeg" alt="FreshFind">
+        FreshFind
+    </div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <!-- Markets Dropdown -->
+        <div class="nav-market">
+
+            <a href="#markets" class="market-link">
+                Markets ▾
+            </a>
+
+            <div class="market-dropdown">
+
+                <a href="north-karachi.html">
+                    North Karachi
+                </a>
+
+                <a href="gulshan.html">
+                    Gulshan-e-Iqbal
+                </a>
+
+                <a href="dha-karachi.html">
+                    DHA Karachi
+                </a>
+
+                <a href="clifton.html">
+                    Clifton
+                </a>
+
+                <a href="pechs.html">
+                    PECHS
+                </a>
+
+                <a href="malir.html">
+                    Malir
+                </a>
+
+                <a href="nazimabad.html">
+                    Nazimabad
+                </a>
+
+                <a href="korangi.html">
+                    Korangi
+                </a>
+
+            </div>
+
+        </div>
+
+        <a href="produce.html">Produce</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact</a>
+
+        <a href="login.html" class="login-btn">
+            Login
+        </a>
+
+    </nav>
+
+</header>
+
+<!-- Breadcrumb / Page Path -->
+<div class="breadcrumb-container">
+    <nav>
+        <ol class="breadcrumb" id="app-breadcrumbs">
+            <li>
+                <a href="#" onclick="showSection('home-page')">
+                    Home
+                </a>
+            </li>
+        </ol>
+    </nav>
+</div>
+
+
+
+
+
+<!-- ================= HERO ================= -->
+
+<section class="produce-hero">
+
+    <div class="hero-content">
+
+        <span class="hero-tag">
+            <i class="fa-mosaic fa-solid fa-leaf"></i>
+            Fresh & Seasonal
+        </span>
+
+        <h1>
+            Produce Guide
+        </h1>
+
+        <p>
+            Explore fresh fruits, vegetables and herbs
+            available from local farmers markets.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="produce-intro">
+
+    <h2>
+        Discover Fresh Produce
+    </h2>
+
+    <p>
+        FreshFind helps you discover seasonal produce
+        and learn more about the fresh products available
+        at local farmers markets.
+    </p>
+
+</section>
+
+
+
+<!-- ================= FILTER ================= -->
+
+<section class="produce-section">
+
+    <div class="produce-filters">
+
+        <button
+            class="filter-btn active"
+            onclick="filterProduce('All', this)">
+            All
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProduce('Vegetable', this)">
+            <i class="fa-solid fa-carrot"></i>
+            Vegetables
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProduce('Fruit', this)">
+            <i class="fa-sharp fa-solid fa-apple-whole"></i>
+            Fruits
+        </button>
+
+        <button
+            class="filter-btn"
+            onclick="filterProduce('Herb', this)">
+            <i class="fa-solid fa-leaf"></i>
+            Herbs
+        </button>
+
+    </div>
+
+
+    <div id="produceContainer"></div>
+
+</section>
+
+<button class="chatbot-button">
+    <a href="chatbot.html">
+        💬
+    </a>
+
+</button>
+
+<footer>
+
+    <h3>
+        FreshFind
+    </h3>
+
+    <p>
+        Fresh All Along
+        <i class="fa-mosaic fa-solid fa-leaf"></i>
+    </p>
+
+    <p>
+        © 2026 FreshFind. All Rights Reserved.
+    </p>
+
+</footer>
+
+
+
+
+</body>
+
+</html>
+
+<script src="js/chatbot.js"></script>
+<script src="js/visitor.js"></script>
+<script src="js/pagepath.js"></script>
+<script src="js/produce.js"></script>

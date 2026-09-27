@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind - Fresh All Along</title>
+
+    <link rel="shortcut icon" href="images/freshfindlogo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="css/visitor.css">
+    <link rel="stylesheet" href="css/pagepath.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/marketscards.css">
+    <link rel="stylesheet" href="css/searcharea.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+</head>
+
+<body>
+
+    <!-- Live Time & Visitor Counter -->
+    <div class="top-bar">
+        <div class="top-container">
+
+            <div class="live-time">
+                <i class="fa-solid fa-clock"></i>
+                Live Time:
+                <span id="clock">--:--:--</span>
+            </div>
+
+            <div class="visitors">
+                <i class="fa-solid fa-eye"></i>
+                Visitors:
+                <strong id="visitor-counter">0</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Navbar -->
+    <header class="navbar">
+
+
+        <div class="logo">
+            <img src="images/freshfindlogo.jpeg" alt="FreshFind">
+            FreshFind
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <!-- Markets Dropdown -->
+            <div class="nav-market">
+
+                <a href="javascript:void(0)" class="market-link">
+                    Markets ▾
+                </a>
+
+                <div class="market-dropdown">
+
+                    <a href="north-karachi.html">
+                        North Karachi
+                    </a>
+
+                    <a href="gulshan.html">
+                        Gulshan-e-Iqbal
+                    </a>
+
+                    <a href="dha-karachi.html">
+                        DHA Karachi
+                    </a>
+
+                    <a href="clifton.html">
+                        Clifton
+                    </a>
+
+                    <a href="pechs.html">
+                        PECHS
+                    </a>
+
+                    <a href="malir.html">
+                        Malir
+                    </a>
+
+                    <a href="nazimabad.html">
+                        Nazimabad
+                    </a>
+
+                    <a href="korangi.html">
+                        Korangi
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="produce.html">Produce</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html" class="login-btn">
+                Login
+            </a>
+
+
+
+        </nav>
+
+    </header>
+
+
+    <!-- Breadcrumb / Page Path -->
+    <div class="breadcrumb-container">
+        <nav>
+            <ol class="breadcrumb" id="app-breadcrumbs"></ol>
+        </nav>
+    </div>
+
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+
+        <h1>Fresh All Along</h1>
+
+        <p>
+            Discover fresh farmers markets near you
+            and find seasonal local produce.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="find-btn" onclick="findNearbyMarkets()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                Find a Market Near You
+            </button>
+
+            <button class="maps-btn" onclick="openGoogleMaps()">
+                <i class="fa-regular fa-map"></i>
+                Google Maps
+            </button>
+
+        </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Find Market Section -->
+    <section class="find-market">
+
+        <h2>Find a Market</h2>
+
+        <div class="market-search">
+
+            <div class="search-box" onmouseleave="hideAreaList()">
+                <input type="text" id="areaSearch" placeholder="Search market by area..." onclick="showAreaList()">
+
+                <div id="areaList" class="area-list">
+                    <div onclick="selectArea('North Karachi')">North Karachi</div>
+                    <div onclick="selectArea('Gulshan-e-Iqbal')">Gulshan-e-Iqbal</div>
+                    <div onclick="selectArea('DHA Karachi')">DHA Karachi</div>
+                    <div onclick="selectArea('Clifton')">Clifton</div>
+                    <div onclick="selectArea('PECHS')">PECHS</div>
+                    <div onclick="selectArea('Malir')">Malir</div>
+                    <div onclick="selectArea('Nazimabad')">Nazimabad</div>
+                    <div onclick="selectArea('Korangi')">Korangi</div>
+                </div>
+            </div>
+
+            <button onclick="searchArea()">Search</button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Market Directory -->
+    <section id="markets" class="markets">
+
+        <h2>Market Directory</h2>
+
+        <div id="marketContainer">
+
+            <!-- JavaScript se cards yahan ayenge -->
+
+        </div>
+
+    </section>
+
+    <!-- Chatbot Button -->
+    <button class="chatbot-button">
+        <a href="chatbot.html">
+            💬
+        </a>
+
+    </button>
+
+    <footer>
+
+        <h3>
+            FreshFind
+        </h3>
+
+        <p>
+            Fresh All Along
+            <i class="fa-mosaic fa-solid fa-leaf"></i>
+        </p>
+
+        <p>
+            © 2026 FreshFind. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
+
+
+<script src="js/pagepath.js"></script>
+<script src="js/script.js"></script>
+<script src="js/searcharea.js"></script>
+<script src="js/location.js"></script>
+<script src="js/visitor.js"></script>

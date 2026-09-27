@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North Karachi Market - FreshFind</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="images/freshfindlogo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/visitor.css">
+    <link rel="stylesheet" href="css/pagepath.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/product.css">
+</head>
+
+<body>
+    <!-- Live Time & Visitor Counter -->
+    <div class="top-bar">
+        <div class="top-container">
+
+            <div class="live-time">
+                <i class="fa-solid fa-clock"></i>
+                Live Time:
+                <span id="clock">--:--:--</span>
+            </div>
+
+            <div class="visitors">
+                <i class="fa-solid fa-eye"></i>
+                Visitors:
+                <strong id="visitor-counter">0</strong>
+            </div>
+
+        </div>
+    </div>
+
+
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/freshfindlogo.jpeg" alt="FreshFind">
+            FreshFind
+        </div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <!-- Markets -->
+            <div class="nav-market">
+
+                <a href="javascript:void(0)" class="market-link">
+                    Markets ▾
+                </a>
+
+                <div class="market-dropdown">
+                    <a href="north-karachi.html">North Karachi</a>
+                    <a href="gulshan.html">Gulshan-e-Iqbal</a>
+                    <a href="dha-karachi.html">DHA Karachi</a>
+                    <a href="clifton.html">Clifton</a>
+                    <a href="pechs.html">PECHS</a>
+                    <a href="malir.html">Malir</a>
+                    <a href="nazimabad.html">Nazimabad</a>
+                    <a href="korangi.html">Korangi</a>
+                </div>
+
+            </div>
+
+            <!-- Items -->
+            <!-- NAVBAR ITEMS DROPDOWN -->
+
+            <div class="nav-items">
+
+                <a href="javascript:void(0)" class="items-link">
+                    Items ▾
+                </a>
+
+                <div class="items-dropdown">
+
+                    <a href="javascript:void(0)" onclick="showProducts('Vegetable')">
+                        <i class="fa-solid fa-carrot"></i>
+                        Vegetables
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="showProducts('Fruit')">
+                        <i class="fa-sharp fa-solid fa-apple-whole"></i>
+                        Fruits
+                    </a>
+
+                    <a href="javascript:void(0)" onclick="showProducts('Herb')">
+                        <i class="fa-solid fa-leaf"></i>
+                        Herbs
+                    </a>
+
+                </div>
+
+            </div>
+
+            <a href="produce.html">Produce</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+
+        </nav>
+    </header>
+
+    <!-- Breadcrumb / Page Path -->
+    <div class="breadcrumb-container">
+        <nav>
+            <ol class="breadcrumb" id="app-breadcrumbs">
+                <li>
+                    <a href="#" onclick="showSection('home-page')">
+                        Home
+                    </a>
+                </li>
+            </ol>
+        </nav>
+    </div>
+
+
+
+
+    <h1 class="green">Freah Garden Market</h1>
+    <h1 class="green">Gulshan-e-Iqbal</h1>
+    
+     <!-- PRODUCTS SECTION -->
+
+     <section id="products" class="products-section">
+
+        <h2>Fresh Products</h2>
+
+        <p class="products-intro">
+            Buy fresh vegetables, fruits and herbs by KG.
+        </p>
+
+        <div id="productContainer"></div>
+
+    </section>
+
+
+</body>
+
+</html>
+<script src="js/visitor.js"></script>
+<script src="js/pagepath.js"></script>
+<script src="js/product.js"></script>

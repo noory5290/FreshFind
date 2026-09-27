@@ -1,0 +1,142 @@
+#marketContainer {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+
+    width: 100%;
+}
+
+.market-card {
+    background: #ffffff;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+
+    border: 1px solid #eeeeee;
+
+    transition:
+        transform 0.35s ease,
+        box-shadow 0.35s ease;
+
+    animation: cardShow 0.7s ease both;
+}
+
+.market-card:hover {
+    transform: translateY(-12px) scale(1.02);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.market-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.market-card:hover img {
+    transform: scale(1.08);
+}
+
+.market-content {
+    padding: 20px;
+}
+
+.market-content h3 {
+    font-size: 21px;
+
+    color: #2e7d32;
+
+    margin-bottom: 15px;
+}
+
+.market-content p {
+    font-size: 14px;
+
+    color: #555;
+
+    margin-bottom: 9px;
+
+    line-height: 1.5;
+}
+
+.market-content button {
+    width: 100%;
+
+    padding: 11px 15px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+}
+
+.market-content button:hover {
+    background: #1b5e20;
+
+    transform: scale(1.04);
+}
+
+
+/* Card Load Animation */
+
+/* @keyframes cardShow {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+} */
+
+
+@media (max-width: 1100px) {
+
+    #marketContainer {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    #marketContainer {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    #marketContainer {
+        grid-template-columns: 1fr;
+    }
+
+}

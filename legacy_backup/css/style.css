@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8f3;
+    color: #222;
+}
+
+.hero {
+    min-height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px;
+
+    background:
+        linear-gradient(rgba(46, 125, 50, 0.7), rgba(27, 94, 32, 0.7)),
+        url("https://images.unsplash.com/photo-1542838132-92c53300491e");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+.hero h1 {
+    font-size: 55px;
+    color: #77c07b;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 25px;
+    color: white;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.find-btn,
+.maps-btn {
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.find-btn {
+    border: none;
+    background: #2e7d32;
+    color: white;
+}
+
+.maps-btn {
+    border: 2px solid #2e7d32;
+    background: white;
+    color: #2e7d32;
+}
+
+.find-btn:hover,
+.maps-btn:hover {
+    transform: scale(1.05);
+}
+
+section {
+    padding: 70px 8%;
+}
+
+section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.find-market {
+    text-align: center;
+    background: white;
+}
+
+#searchMarket {
+    width: 60%;
+    padding: 15px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-size: 16px;
+}
+
+.find-market button {
+    padding: 15px 25px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #2e7d32;
+    color: white;
+
+    cursor: pointer;
+}
+
+.markets {
+    background: #f5f8f3;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FreshFind - Chatbot</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="shortcut icon" href="images/freshfindlogo.jpeg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/chatbot.css">
+    
+</head>
+
+<body>
+
+    <div class="chatbot-page">
+
+        <div class="chat-header">
+            <div>
+                <h1>FreshFind Chatbot</h1>
+                <p>Ask us about markets and fresh produce 
+                    <i class="fa-mosaic fa-solid fa-leaf"></i>
+                </p>
+            </div>
+
+            <a href="index.html" class="back-btn">← Home</a>
+        </div>
+
+
+        <div class="chat-container">
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="bot-message">
+                    <span class="message-icon">🤖</span>
+
+                    <div class="message-text">
+                        <strong>FreshFind Bot</strong>
+                        <p>
+                            Hello! 👋 Welcome to FreshFind.
+                            How can I help you today?
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="quick-buttons">
+
+                <button onclick="quickMessage('What is FreshFind?')">
+                    What is FreshFind?
+                </button>
+
+                <button onclick="quickMessage('Find a market')">
+                    Find a Market
+                </button>
+
+                <button onclick="quickMessage('What products are available?')">
+                    Products
+                </button>
+
+                <button onclick="quickMessage('Market timings')">
+                    Market Timings
+                </button>
+
+            </div>
+
+
+            <div class="chat-input">
+
+                <input
+                    type="text"
+                    id="userInput"
+                    placeholder="Type your message..."
+                    onkeydown="handleEnter(event)"
+                >
+
+                <button onclick="sendMessage()">
+                    Send
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    
+
+</body>
+</html>
+
+<script src="js/chatbot.js"></script>

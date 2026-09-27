@@ -1,0 +1,370 @@
+/* =====================================
+   PRODUCTS SECTION
+===================================== */
+.green{
+    text-align: center;
+    margin-top: 15px;
+}
+.products-section {
+
+    padding: 70px 8%;
+
+    background: #f5f8f3;
+
+}
+
+
+.products-section h2 {
+
+    text-align: center;
+
+    font-size: 35px;
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+
+}
+
+
+.products-intro {
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 17px;
+
+    margin-bottom: 35px;
+
+}
+
+
+#productContainer {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 25px;
+
+    width: 100%;
+
+}
+
+.product-card {
+
+    background: white;
+
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    border: 1px solid #e5e5e5;
+
+    box-shadow:
+        0 5px 18px rgba(0,0,0,0.10);
+
+    transition: 0.3s ease;
+
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.16);
+
+}
+
+.product-image {
+
+    width: 100%;
+
+    height: 190px;
+
+    overflow: hidden;
+
+}
+
+
+.product-image img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: 0.4s ease;
+
+}
+
+
+.product-card:hover
+.product-image img {
+
+    transform:
+        scale(1.05);
+
+}
+
+.product-content {
+
+    padding: 18px;
+
+    text-align: left;
+
+}
+
+
+.product-content h3 {
+
+    font-size: 21px;
+
+    color: #2e7d32;
+
+    margin-bottom: 10px;
+
+}
+
+.product-category {
+
+    display: inline-block;
+
+    padding: 5px 11px;
+
+    background: #e8f5e9;
+
+    color: #2e7d32;
+
+    border-radius: 20px;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+
+}
+
+.product-description {
+
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.5;
+
+    margin-bottom: 12px;
+
+}
+
+.price {
+
+    font-size: 17px !important;
+
+    font-weight: bold;
+
+    color: #333 !important;
+
+    margin-bottom: 12px;
+
+}
+
+.quantity-box {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    margin: 12px 0;
+
+    flex-wrap: wrap;
+
+}
+
+
+.quantity-box label {
+
+    width: 100%;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    margin-bottom: 4px;
+
+}
+
+
+.quantity-btn {
+
+    width: 35px !important;
+
+    height: 35px;
+
+    padding: 0 !important;
+
+    margin: 0 !important;
+
+    border: none !important;
+
+    border-radius: 6px !important;
+
+    background: #2e7d32 !important;
+
+    color: white !important;
+
+    font-size: 20px !important;
+
+    cursor: pointer;
+
+}
+
+
+.quantity-btn:hover {
+
+    background: #1b5e20 !important;
+
+}
+
+.quantity-box input {
+
+    width: 60px;
+
+    height: 35px;
+
+    text-align: center;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+}
+
+.total-price {
+
+    font-size: 17px !important;
+
+    font-weight: bold;
+
+    color: #2e7d32 !important;
+
+    margin-bottom: 12px;
+
+}
+
+.buy-btn {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #2e7d32;
+
+    color: white;
+
+    font-size: 15px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+}
+
+
+.buy-btn:hover {
+
+    background: #1b5e20;
+
+    transform:
+        scale(1.02);
+
+}
+
+
+.buy-btn:disabled {
+
+    background: #777;
+
+    cursor: default;
+
+    transform: none;
+
+}
+
+.purchase-message {
+
+    display: none;
+
+    margin-top: 12px !important;
+
+    padding: 10px;
+
+    border-radius: 7px;
+
+    background: #e8f5e9;
+
+    color: #2e7d32 !important;
+
+    font-size: 13px !important;
+
+    font-weight: bold;
+
+    line-height: 1.4;
+
+}
+
+@media (max-width: 1100px) {
+
+    #productContainer {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 800px) {
+
+    #productContainer {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    #productContainer {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
